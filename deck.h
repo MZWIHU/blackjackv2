@@ -16,7 +16,7 @@ public:
 
     void printDeck();
 
-   void shuffle();
+    void shuffle();
 
 };
 

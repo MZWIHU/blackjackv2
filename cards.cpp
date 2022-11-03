@@ -14,43 +14,43 @@ std::string Card::toString(color c, number n) {
 
     switch (n) {
         case ace:
-            output = "ace";
+            output = "Ace";
             break;
         case two:
-            output = "two";
+            output = "Two";
             break;
         case three:
-            output = "three";
+            output = "Three";
             break;
         case four:
-            output = "four";
+            output = "Four";
             break;
         case five:
-            output = "five";
+            output = "Five";
             break;
         case six:
-            output = "six";
+            output = "Six";
             break;
         case seven:
-            output = "seven";
+            output = "Seven";
             break;
         case eight:
-            output = "eight";
+            output = "Eight";
             break;
         case nine:
-            output = "nine";
+            output = "Nine";
             break;
         case ten:
-            output = "ten";
+            output = "Ten";
             break;
         case jack:
-            output = "jack";
+            output = "Jack";
             break;
         case queen:
-            output = "queen";
+            output = "Queen";
             break;
         case king:
-            output = "king";
+            output = "King";
             break;
 
     }
@@ -60,16 +60,16 @@ std::string Card::toString(color c, number n) {
 
     switch (c) {
         case hearts:
-             output = output + "hearts";
+             output = output + "Hearts";
             break;
         case diamonds:
-            output += "diamonds";
+            output += "Diamonds";
             break;
         case spades:
-            output = output + "spades";
+            output = output + "Spades";
             break;
         case clubs:
-            output += "clubs";
+            output += "Clubs";
             break;
 
     }
