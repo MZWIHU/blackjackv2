@@ -93,6 +93,9 @@ int main() {
             loss++;
             std::cout << "You lost with: " << hand << std::endl << std::endl;
             hand = 0;
+            if (i > d.stack.size() - 6) {
+                break;
+            }
         }
 
 
