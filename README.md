@@ -1,3 +1,3 @@
 # blackjackv2
 
-max hat nen kleinen
+Max stfu
