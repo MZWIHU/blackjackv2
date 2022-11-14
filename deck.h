@@ -18,6 +18,8 @@ public:
 
     void shuffle();
 
+    int checkValue(int, int);
+
 };
 
 #endif //BLACKJACKV2_DECK_H

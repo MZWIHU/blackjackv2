@@ -48,3 +48,56 @@ void Deck::shuffle() {
 
     std::shuffle(std::begin(stack), std::end(stack), rng);
 }
+
+int Deck::checkValue(int i, int hand) {
+
+    switch (stack.at(i).n) {
+
+        case Card::ace:
+            if (hand > 10) {
+                return 1;
+            } else {
+                return 11;
+            }
+            break;
+        case Card::two:
+            return 2;
+            break;
+        case Card::three:
+            return 3;
+            break;
+        case Card::four:
+            return 4;
+            break;
+        case Card::five:
+            return 5;
+            break;
+        case Card::six:
+            return 6;
+            break;
+        case Card::seven:
+            return 7;
+            break;
+        case Card::eight:
+            return 8;
+            break;
+        case Card::nine:
+            return 9;
+            break;
+        case Card::ten:
+            return 10;
+            break;
+        case Card::jack:
+            return 10;
+            break;
+        case Card::queen:
+            return 10;
+            break;
+        case Card::king:
+            return 10;
+            break;
+    }
+
+
+
+}
