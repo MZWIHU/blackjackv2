@@ -62,13 +62,19 @@ int main() {
     for (int i = 0; i < d.stack.size(); i++) {
 
         //check balance
-        if(konto < bet) {
-            std::cout << "Not enough balance to play another round" << std::endl;
-            break;
-        }
+
 
         //check if new round started
         if (begin == 0) {
+            if(konto < bet) {
+                std::cout << "Not enough balance to play another round" << std::endl;
+                break;
+            }
+            std::cout << "Do you want to play another round? Y or N" << std::endl;
+            std::cin >> decide;
+            if (decide == 'n') {
+                break;
+            }
             std::cout << "Your current balance: " << konto  << " USD"<< std::endl;
             std::cout << "Placed bet of: " << bet << " USD" << std::endl;
             konto = konto - bet;
