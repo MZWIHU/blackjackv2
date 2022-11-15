@@ -67,6 +67,7 @@ int main() {
         //check if new round started
         if (begin == 0) {
             if(konto < bet) {
+                blackjack = true;
                 std::cout << "Not enough balance to play another round" << std::endl;
                 break;
             }
@@ -85,7 +86,6 @@ int main() {
             std::cout << "You have drawn: " << d.stack.at(i).toString(d.stack.at(i).c, d.stack.at(i).n) << std::endl;
             hand += d.checkValue(i, hand);
             begin++;
-            blackjack = true;
             continue;
         }
         //dealer draws his first card
